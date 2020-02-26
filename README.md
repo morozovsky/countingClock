@@ -2,7 +2,7 @@
 Code, MCAD, and EECAD for Counting Clock Project
 
 ## Electrical Assembly Instructions
-Almost all of the parts are reverse-polarity sensitive, that is, if you plug them in backwards, they can be damaged.
+_Almost all of the parts are reverse-polarity sensitive, that is, __if you plug them in backwards, they can be damaged__._
 
 ### Required Tools
 * Soldering iron
@@ -21,6 +21,10 @@ Quantity | Reference Designator on PCB | Part Description | Manufacturer Part Nu
 4 | D1, D2, D3, D4 | Through Hole LED 3mm Green | HLMP-1503-C0002 | [630-HLMP-1503-C0002](https://www.mouser.com/ProductDetail/630-HLMP-1503-C0002)
 1 | DS1 | LED Display 2 Digit DIP 18 pins | LTD-5623AG | [859-LTD-5623AG](https://www.mouser.com/ProductDetail/859-LTD-5623AG)
 2 | J1, J2 | Female header 10 pins
+
+### Assembly
+1. Solder the 4 green LEDs, the longer of the two leads goes into the round pad, insert them on the side of the board that has the letters H, D, W, M printed. Slide the part as far in as you can, although the green plastic will not be flush with the circuit board. Bend the leads apart so that the LEDs don't slide. After you solder, cut off the excess length of the leads.
+1. Solder the 5 pin resister network, the dot indicates pin 1 and should go into the square pad on the side of the board that says R3 and has a rectangular outline.
 
 ## Mechanical Assembly Instructions
 1. Push the tabs in the case towards the edges of the case and slide in the circuit board, make sure to align the LED display and LEDs towards the openings (it will only fit one way).
