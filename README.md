@@ -9,6 +9,9 @@ _Almost all of the parts are reverse-polarity sensitive, that is, __if you plug 
 * Solder (leaded is easy to work with than lead-free, but don't eat it)
 * Snips (to trim excess wire leads)
 
+![Front](/Images/front.jpg)
+![Back](/Images/back.jpg)
+
 ### Bill of Materials
 
 Quantity | Reference Designator on PCB | Part Description | Manufacturer Part Number | Mouser.com Part Number
