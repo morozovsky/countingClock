@@ -1,5 +1,6 @@
 # countingClock
-This repository contains complete code, MCAD, and EECAD for the Counting Clock project. The Counting Clock is an internet-connected thing that displays the amount of time until a specified date and time in the future, or from a specified date and time in the past. The amount of time is displayed in hours, days, weeks, or months, whatever is the smallest unit that fits on a two-digit display (e.g. 48 hours will be displayed instead of 2 days, 52 weeks will be displayed instead of 12 months, etc.). The internet connection is used only to get the current date and time. No data is uploaded from the device. You specify the date and time (and the WiFi login credentials) by downloading a program from your computer to a microcontroller in the device.
+<img src="https://github.com/morozovsky/countingClock/blob/master/Images/case.jpg" width="400">
+This repository contains complete code, MCAD, and EECAD for the Counting Clock project. The Counting Clock is an internet-connected thing that displays the amount of time until a specified date and time in the future, or from a specified date and time in the past. The amount of time is displayed in hours, days, weeks, or months, whatever is the smallest unit that fits on a two-digit display (e.g. 48 hours will be displayed instead of 2 days, 52 weeks will be displayed instead of 12 months, etc.). LEDs indicate which unit of time is currently displayed. The internet connection is used only to get the current date and time. No data is uploaded from the device. You specify the date and time (and the WiFi login credentials) by downloading a program from your computer to a microcontroller in the device.
 
 ## Electrical Assembly Instructions
 _Almost all of the parts are reverse-polarity sensitive, that is, __if you plug them in backwards, they can be damaged__. It's also important to install parts on the correct side of the board. See the pictures below for reference._
@@ -23,6 +24,8 @@ Quantity | Reference Designator on PCB | Part Description | Manufacturer Part Nu
 4 | D1, D2, D3, D4 | Through Hole LED 3mm Green | HLMP-1503-C0002 | [630-HLMP-1503-C0002](https://www.mouser.com/ProductDetail/630-HLMP-1503-C0002)
 1 | DS1 | LED Display 2 Digit DIP 18 pins | LTD-5623AG | [859-LTD-5623AG](https://www.mouser.com/ProductDetail/859-LTD-5623AG)
 2 | J1, J2 | Female header 10 pins
+2 | | Male header 10 pins
+1 | | TinyPICO microcontroller
 
 ### Assembly
 1. Solder the 4 green LEDs. The longer of the two leads goes into the round pad, insert them on the side of the board that has the letters H, D, W, M printed (Counting Clock side). Slide the part as far in as you can, although the green plastic will not be flush with the circuit board. Bend the leads apart so that the LEDs don't slide. After you solder, cut off the excess length of the leads.
