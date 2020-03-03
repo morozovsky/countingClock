@@ -29,17 +29,37 @@ Quantity | Reference Designator on PCB | Part Description | Manufacturer Part Nu
 
 ### Assembly
 1. Solder the 4 green LEDs. The longer of the two leads goes into the round pad, insert them on the side of the board that has the letters H, D, W, M printed (Counting Clock side). Slide the part as far in as you can, although the green plastic will not be flush with the circuit board. Bend the leads apart so that the LEDs don't slide. After you solder, cut off the excess length of the leads.
+
+    <img src="https://github.com/morozovsky/countingClock/blob/master/Images/step1.jpg" width="400">
 1. Solder the 5 pin resister network. The dot next to the letter B indicates pin 1 and should go into the square pad on the side of the board that says R3 and has a rectangular outline (nickmo 2019 side).
+
+    <img src="https://github.com/morozovsky/countingClock/blob/master/Images/step2.jpg" width="400">
 1. Install the capacitors C1 and C2 on the nickmo 2019 side which has C1 and C2 labeled. For these components, the orientation doesn't matter. Like the LEDs, slide in the components as far as you can and bend the leads to prevent them from sliding out. After you solder, cut off the excess length of the leads.
+
+    <img src="https://github.com/morozovsky/countingClock/blob/master/Images/step3.jpg" width="400">
 1. Solder the two two-digit LED display, DS1, on the Counting Clock side of the board. Make sure to line up the decimal places to match the silkscreen printing.
+
+    <img src="https://github.com/morozovsky/countingClock/blob/master/Images/step4.jpg" width="400">
 1. Solder U4, the 14 pin integrated circuit (IC), to the nickmo 2019 side of the board. Make sure to align the U-shaped depression on the IC to the U-shaped mark on the silkscreen printing (next to the USB label). This part is not visible in the picture above because it is below the microcontroller.
+
+    <img src="https://github.com/morozovsky/countingClock/blob/master/Images/step5.jpg" width="400">
 1. Solder U1 and U2, 16 pin ICs, to the nickmo 2019 side of the board. These parts have the Texas-shaped Texas Instruments logo and the second line of text says "SN74HC595N," they are shorter in height to the other 16 pin ICs (next step). Make sure to align the U-shaped depression on the IC to the U-shaped mark on the silkscreen printing, the two parts have opposite orientations. 
+
+    <img src="https://github.com/morozovsky/countingClock/blob/master/Images/step6.jpg" width="400">
 1. Solder R1 and R2, 16 pin ICs, to the nickmo 2019 side of the board. Make sure to align the U-shaped depression on the IC to the U-shaped mark on the silkscreen printing, the two parts have opposite orientations. 
+
+    <img src="https://github.com/morozovsky/countingClock/blob/master/Images/step7.jpg" width="400">
 1. The remaining parts are the 10 pin headers to connect the microcontroller board (with the USB port) to the circuit board. Using male and female headers allows you to remove the microcontroller from the circuit board and use it for other projects too.
     1. The female headers (black enclosure with long gold pins) get soldered to the circuit board and the male headers (gold pins with a thin plastic spacer) get soldered to the microcontroller.
     1. Insert the long side of the male headers into the female headers.
+
+        <img src="https://github.com/morozovsky/countingClock/blob/master/Images/step8ii.jpg" width="400">
     1. Insert the long pins of the female headers into the circuit board from the nickmo 2019 side, where J1 and J2 are labeled.
+
+        <img src="https://github.com/morozovsky/countingClock/blob/master/Images/step8iii.jpg" width="400">
     1. Align the microcontroller onto the short side of the male headers, which should stick up through the microcontroller enough to solder to. Make sure the USB port of the microcontroller is next to the edge of the circuit board, above where "USB" is printed on silkscreen on the circuit board.
+
+        <img src="https://github.com/morozovsky/countingClock/blob/master/Images/step8iv.jpg" width="400">
     1. Solder the male header pins (2 x 10 pins) to the microcontroller while making sure that the headers are perpendicular to both the microcontroller and the circuit board. I recommend doing the corner pins first to lock in the alignment.
     1. Solder the female header pins (2 x 10 pins) to the circuit board. Trim the excess length once you're done.
 1. With a USB micro cable, plug the microcontroller into a powered USB port. You should see a few LEDs light up on the microcontroller (but not the ones on the circuit board, yet). If you see any magic smoke escape, reconsider the decisions you've made up to this point.
