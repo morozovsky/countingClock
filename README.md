@@ -50,12 +50,17 @@ _There's a couple extra connectors in the bag, they are not needed. Do not eat t
 
 ## Software Instructions
 1. Download and install the Arduino IDE from: https://www.arduino.cc/en/main/software
-1. esp32 board definition https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md
-1. manage libraries: install Time, TinyPICO
-1. Download the code from this GitHub repository to your computer.
-1. Modify the values in constants.h to set the second, minute, hour, day, month, and year you want to count down to (or up from) and your WiFi network name (SSID) and password, both are case-sensitive.
+1. Inside the Arduino IDE, select Tools -> Board -> Boards Manager
+    1. Search for (text box in the upper right hand corner of the Boards Manager window) and install the esp32 package
+1. Inside the Arduino IDE, select Sketch -> Include Library -> Manage Libraries...
+    1. Search for (text box in the upper right hand corner of the Library Manager window) and install the TinyPICO Helper Library
+    1. Search for and install the Time library by Michael Margolis (make sure to install this library, not any other version)
+1. Download the code from this GitHub repository to your computer. The simplest option is to right click on these links and save them to your computer in a dedicated folder: [constants.h](https://raw.githubusercontent.com/morozovsky/countingClock/master/Software/counting_clock/constants.h) [counting_clock.ino](https://raw.githubusercontent.com/morozovsky/countingClock/master/Software/counting_clock/counting_clock.ino) For extra credit, clone this repository to your computer.
+1. Open counting_click.ino in Arduino IDE and it will also open constants.h in another tab. Modify the values in constants.h to set the second, minute, hour, day, month, and year you want to count down to (or up from) and your WiFi network name (SSID) and password, both are case-sensitive. Save your changes.
 1. Connect your computer to the microcontroller with a USB micro B cable.
-1. Upload the program to the microcontroller.
+1. From the Tools -> Board menu, select TinyPICO.
+1. Upload the program to the microcontroller. This will take some time as the code is compiled and transferred to the microcontroller.
+1. You can open the Serial Monitor (magnifying glass option in the top right corner of the Arduino window) to see updates from the microcontroller. You can use this to test the microcontroller by itself or assembled to the circuit board.
 
 ## Next Steps
 Want to take things a step further? Here's a few ideas:
