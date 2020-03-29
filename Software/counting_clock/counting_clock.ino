@@ -80,8 +80,8 @@ void display_reset()
 {
   digitalWrite(not_output_enable_pin, HIGH);
   digitalWrite(latch_pin, LOW);
-  shiftOut(data_pin, clock_pin, MSBFIRST, 0);
-  shiftOut(data_pin, clock_pin, MSBFIRST, 0);
+  shiftOut(data_pin, clock_pin, LSBFIRST, 0);
+  shiftOut(data_pin, clock_pin, LSBFIRST, 0);
   digitalWrite(latch_pin, HIGH);
   digitalWrite(not_output_enable_pin, LOW);
 }
@@ -89,8 +89,8 @@ void display_reset()
 void display_FI()
 {
   digitalWrite(latch_pin, LOW);
-  shiftOut(data_pin, clock_pin, LSBFIRST, B10001110);
   shiftOut(data_pin, clock_pin, LSBFIRST, B01100000);
+  shiftOut(data_pin, clock_pin, LSBFIRST, B10001110);
   digitalWrite(latch_pin, HIGH);
 }
 
@@ -190,6 +190,8 @@ void setup()
   }
   display_reset();
   configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);
+  time(&time_now);
+  delay(1000);
 }
 
 void loop()
@@ -227,8 +229,10 @@ void loop()
   {
     display_number(99);
     set_time_units(all);
+    delay(10000); // delay 10 seconds
+    return;
   }
 
-  delay(1000); // TODO this can be much longer
+  delay(120000); // update every 2 minutes
 
 }
