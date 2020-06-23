@@ -70,6 +70,8 @@ _There's a couple extra connectors in the bag, they are not needed. Do not eat t
 
 ## Software Instructions
 1. Download and install the Arduino IDE from: https://www.arduino.cc/en/main/software
+1. Inside the Arduino IDE, select Preferences
+    1. In the Settings tab, in the "Additional Boards Manager URLs" text box, add this URL: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 1. Inside the Arduino IDE, select Tools -> Board -> Boards Manager
     1. Search for (text box in the upper right hand corner of the Boards Manager window) and install the esp32 package
 1. Inside the Arduino IDE, select Sketch -> Include Library -> Manage Libraries...
