@@ -69,6 +69,7 @@ _There's a couple extra connectors in the bag, they are not needed. Do not eat t
 1. Push the tabs in the case towards the edges of the case and slide in the circuit board, make sure to align the LED display and LEDs towards the openings (it will only fit one way).
 
 ## Software Instructions
+1. Download and install the USB to UART drivers for your computer from: https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
 1. Download and install the Arduino IDE from: https://www.arduino.cc/en/main/software
 1. Inside the Arduino IDE, select Preferences
     1. In the Settings tab, in the "Additional Boards Manager URLs" text box, add this URL: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
